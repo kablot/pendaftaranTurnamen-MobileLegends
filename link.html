@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrasi Turnamen Mobile Legends</title>
+    <link rel="stylesheet" href="link.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">ML Tournament</div>
+      <ul class="menu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">Info</a></li>
+        <li><a href="#register">Daftar</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1></h1>
+        <p>Daftarkan timmu & buktikan siapa yang terkuat!</p>
+        <a href="#register"
+          ><button class="btn-primary">Daftar Sekarang</button></a
+        >
+      </div>
+    </section>
+
+    <!-- INFO SECTION -->
+    <section class="about" id="about">
+      <h2>Kenapa Harus Ikut?</h2>
+
+      <div class="features">
+        <div class="card">
+          <h3>💎 Hadiah Besar</h3>
+          <p>Total hadiah hingga Rp 3.000.000</p>
+        </div>
+        <div class="card">
+          <h3>🔥 Kompetitif</h3>
+          <p>BO3 & Final BO5</p>
+        </div>
+        <div class="card">
+          <h3>🎮 Semua Rank</h3>
+          <p>Epic – Mythic Glory</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTRATION FORM -->
+    <section class="register" id="register">
+      <h2>Formulir Pendaftaran</h2>
+
+      <form id="tournamentForm">
+        <label>Nama Tim</label>
+        <input
+          id="namatim"
+          type="text"
+          placeholder="Masukkan nama tim"
+          required
+        />
+
+        <label>Nama Kapten</label>
+        <input
+          id="kapten"
+          type="text"
+          placeholder="Masukkan nama kapten"
+          required
+        />
+
+        <label>ID Mobile Legends (Kapten)</label>
+        <input id="idml" type="text" placeholder="12345678 (1234)" required />
+
+        <label>Email</label>
+        <input id="email" type="email" placeholder="Masukkan email" required />
+
+        <label>Nomor WhatsApp</label>
+        <input id="wa" type="text" placeholder="08xxxxxxxxxx" required />
+
+        <label>Tier Saat Ini</label>
+        <select id="tier" required>
+          <option value="">Pilih Tier</option>
+          <option>Epic</option>
+          <option>Legend</option>
+          <option>Mythic</option>
+          <option>Mythic Honor</option>
+          <option>Mythic Glory</option>
+        </select>
+
+        <button class="btn-primary" type="submit">Kirim Pendaftaran</button>
+      </form>
+    </section>
+
+    <script src="link.js"></script>
+  </body>
+</html>

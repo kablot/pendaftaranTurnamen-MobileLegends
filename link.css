@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0d0f16;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  padding: 15px 40px;
+  background: rgba(10, 12, 20, 0.65);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar.sticky {
+  padding: 10px 40px;
+  background: rgba(10, 12, 20, 0.9);
+  box-shadow: 0 0 25px rgba(0, 140, 255, 0.4);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #00aaff;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu li a {
+  color: #ccc;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  position: relative;
+}
+
+.menu li a:hover,
+.menu li a.active {
+  color: #00aaff;
+}
+
+.menu li a.active::after,
+.menu li a:hover::after {
+  width: 100%;
+}
+
+.menu li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #00aaff;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background: url("https://wallpaperaccess.com/full/3518004.jpg") center/cover
+    no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.hero h1 {
+  font-size: 55px;
+  font-weight: 800;
+  text-shadow: 0 0 25px #160202;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.btn-primary {
+  margin-top: 20px;
+  padding: 12px 32px;
+  background: #00aaff;
+  border: none;
+  border-radius: 8px;
+  color: #f9f5f5;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #0080cc;
+  box-shadow: 0 0 20px rgba(0, 150, 255, 0.7);
+}
+
+/* ABOUT SECTION */
+.about {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #00aaff;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 280px;
+  padding: 20px;
+  background: #111525;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 150, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 150, 255, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(0, 150, 255, 0.5);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #00aaff;
+}
+
+/* FORM */
+.register {
+  padding: 70px 40px;
+  background: #0b0d14;
+}
+
+.register h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00aaff;
+  font-size: 32px;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+select {
+  padding: 12px;
+  background: #1a1d2e;
+  border: 1px solid #00aaff;
+  border-radius: 6px;
+  color: white;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 150, 255, 0.6);
+  border-color: #0088cc;
+}
